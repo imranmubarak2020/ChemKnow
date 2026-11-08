@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemKnow | Chemistry Made Practical</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <h1>
+                    <i data-lucide="flask-conical" class="brand-icon"></i>
+                    ChemKnow
+                </h1>
+                <p>Know Chemistry. Solve Problems.</p>
+            </div>
+
+            <nav class="navbar" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#platform">Platform</a>
+                <a href="#chemtools">ChemTools</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="home">
+        <section class="welcome">
+            <p class="eyebrow">PRACTICAL CHEMISTRY LEARNING PLATFORM</p>
+            <h2>Welcome to ChemKnow, where chemistry meets intelligent technology.</h2>
+            <p>
+                Explore chemistry through intelligent tools, interactive learning,
+                scientific research and practical solutions to real-world problems.
+            </p>
+
+            <a href="#chemtools" class="hero-button">
+                Explore ChemTools
+                <i data-lucide="arrow-right"></i>
+            </a>
+        </section>
+
+        <section class="tools" id="platform">
+
+            <div class="section-heading">
+                <p class="eyebrow">EXPLORE CHEMNKOW</p>
+                <h2>One Platform. Multiple Possibilities.</h2>
+                <p>
+                    Discover tools and intelligent resources designed to make
+                    chemistry easier to understand and apply.
+                </p>
+            </div>
+
+            <article class="tool-card">
+                <h3>
+                    <i data-lucide="calculator"></i>
+                    Chemistry Calculator
+                </h3>
+                <p>Perform essential chemistry calculations with clear results and practical explanations.</p>
+                <button id="calculator-button">Explore Calculator</button>
+            </article>
+
+            <article class="tool-card" id="pet-recycling">
+                <h3>
+                    <i data-lucide="recycle"></i>
+                    PET Recycling Simulator
+                </h3>
+                <p>Explore PET plastic recycling processes, material recovery and industrial production yield.</p>
+                <button id="recycling-button">Explore Simulator</button>
+            </article>
+        </section>
+
+        <section class="calculator" id="chemtools">
+            <h2>Molarity Calculator</h2>
+            <p>Calculate the concentration of a solution.</p>
+
+            <label for="moles">Amount of solute (mol)</label>
+            <input type="number" id="moles" placeholder="e.g. 2">
+
+            <label for="volume">Volume of solution (L)</label>
+            <input type="number" id="volume" placeholder="e.g. 4">
+
+            <button id="calculate-button">Calculate Molarity</button>
+
+            <p id="result" aria-live="polite"></p>
+            <div id="calculation-breakdown" aria-live="polite"></div>
+        </section>
+
+
+        <section class="calculator">
+            <h2>Dilution Calculator</h2>
+            <p>Calculate the final concentration after dilution.</p>
+
+            <label for="initial-concentration">
+                Initial Concentration (C₁)
+            </label>
+            <input type="number" id="initial-concentration" placeholder="e.g. 2">
+
+            <label for="initial-volume">
+                Initial Volume (V₁)
+            </label>
+            <input type="number" id="initial-volume" placeholder="e.g. 50">
+
+            <label for="final-volume">
+                Final Volume (V₂)
+            </label>
+            <input type="number" id="final-volume" placeholder="e.g. 100">
+
+            <button id="dilution-button">
+                Calculate Final Concentration
+            </button>
+
+            <p id="dilution-result" aria-live="polite"></p>
+            <div id="dilution-breakdown" aria-live="polite"></div>
+        </section>
+
+
+        <section class="calculator">
+            <h2>Percentage Yield Calculator</h2>
+            <p>Calculate the efficiency of a chemical reaction.</p>
+
+            <label for="actual-yield">Actual Yield (g)</label>
+            <input type="number" id="actual-yield" placeholder="e.g. 40">
+
+            <label for="theoretical-yield">Theoretical Yield (g)</label>
+            <input type="number" id="theoretical-yield" placeholder="e.g. 50">
+
+            <button id="yield-button">Calculate Percentage Yield</button>
+
+            <p id="yield-result" aria-live="polite"></p>
+            <div id="yield-breakdown" aria-live="polite"></div>
+        </section>
+
+        <section class="chemlearn" id="chemlearn">
+            <div class="chemlearn-heading">
+                <p class="eyebrow">CHEMISTRY EDUCATION</p>
+                <h2>Learn Chemistry with ChemKnow</h2>
+                <p>
+                    Build your understanding of chemistry through
+                    structured lessons, interactive quizzes and
+                    practical scientific explanations.
+                </p>
+            </div>
+
+            <div class="chemlearn-options">
+
+                <article class="learning-card">
+                    <h3>
+                        <i data-lucide="book-open"></i>
+                        Chemistry Lessons
+                    </h3>
+                    <p>
+                        Explore structured chemistry lessons designed
+                        to build your understanding step by step.
+                    </p>
+                    <button id="lessons-button">Explore Lessons</button>
+                </article>
+
+                <article class="learning-card">
+                    <h3>
+                        <i data-lucide="brain"></i>
+                        Interactive Quizzes
+                    </h3>
+                    <p>
+                        Test your knowledge, answer chemistry questions
+                        and learn from instant feedback.
+                    </p>
+                    <button id="quizzes-button">Start Learning</button>
+                </article>
+            </div>
+
+            <div class="learning-levels">
+
+                <div class="level-heading">
+                    <h3>Explore Chemistry by Learning Level</h3>
+                    <p>
+                        Choose a level and progress through structured
+                        chemistry topics at your own pace.
+                    </p>
+                </div>
+
+                <div class="level-grid">
+
+                    <article class="level-card">
+                        <span class="level-number">01</span>
+                        <h3>Beginner Chemistry</h3>
+                        <p>
+                            Build a strong foundation in basic chemistry
+                            concepts and scientific principles.
+                        </p>
+                        <button class="level-button" data-level="beginner">
+                            Explore Level
+                        </button>
+                    </article>
+
+                    <article class="level-card">
+                        <span class="level-number">02</span>
+                        <h3>Intermediate Chemistry</h3>
+                        <p>
+                            Develop deeper knowledge of chemical
+                            reactions, bonding and calculations.
+                        </p>
+                        <button class="level-button" data-level="intermediate">
+                            Explore Level
+                        </button>
+                    </article>
+
+                    <article class="level-card">
+                        <span class="level-number">03</span>
+                        <h3>Advanced Chemistry</h3>
+                        <p>
+                            Explore specialised chemistry concepts
+                            and more challenging scientific principles.
+                        </p>
+                        <button class="level-button" data-level="advanced">
+                            Explore Level
+                        </button>
+                    </article>
+
+                    <article class="level-card">
+                        <span class="level-number">04</span>
+                        <h3>University-Level Chemistry</h3>
+                        <p>
+                            Study university-level chemistry,
+                            mathematical applications and industrial concepts.
+                        </p>
+                        <button class="level-button" data-level="university">
+                            Explore Level
+                        </button>
+                    </article>
+
+                </div>
+
+                <!-- Learning content displays outside the grid -->
+
+                <div class="curriculum-display" id="curriculum-display" aria-live="polite"></div>
+
+                <div class="lesson-display" id="lesson-display"></div>
+
+                <div class="quiz-display" id="quiz-display"></div>
+
+            </div>
+
+            <div class="learning-progress" id="learning-progress">
+                <h3>Your Learning Progress</h3>
+
+                <div class="progress-stats">
+                    <div class="progress-stat">
+                        <span class="progress-value" id="completed-lessons">0</span>
+                        <p>Lessons Completed</p>
+                    </div>
+
+                    <div class="progress-stat">
+                        <span class="progress-value" id="quizzes-attempted">0</span>
+                        <p>Quizzes Attempted</p>
+                    </div>
+
+                    <div class="progress-stat">
+                        <span class="progress-value" id="average-score">0%</span>
+                        <p>Average Quiz Score</p>
+                    </div>
+                </div>
+
+                <button id="reset-quiz-history">
+                    Reset Quiz History
+                </button>
+            </div>
+
+            <!-- MISTAKE REVIEW DASHBOARD -->
+
+            <!-- MISTAKE REVIEW DASHBOARD -->
+
+            <div class="mistake-review" id="mistake-review">
+
+                <div class="mistake-heading">
+                    <div class="mistake-title">
+                        <span class="mistake-icon">
+                            <i data-lucide="clipboard-list"></i>
+                        </span>
+                        <div>
+                            <h3>My Mistake Review</h3>
+                            <p>Learn from every incorrect answer.</p>
+                        </div>
+                    </div>
+
+                    <span class="review-badge">Learning Review</span>
+                </div>
+
+                <div class="mistake-overview">
+
+                    <div class="mistake-stat">
+                        <span class="mistake-icon">
+                            <i data-lucide="alert-circle"></i>
+                        </span>
+                        <div>
+                            <span id="total-mistakes">0</span>
+                            <p>Total Mistakes</p>
+                        </div>
+                    </div>
+
+                    <div class="mistake-stat">
+                        <span class="mistake-icon">
+                            <i data-lucide="book-open"></i>
+                        </span>
+                        <div>
+                            <span id="topics-to-review">0</span>
+                            <p>Topics to Review</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="mistake-list">
+                    <p>No mistakes recorded yet.</p>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <section class="simulator" id="simulator">
+            <div class="simulator-heading">
+                <p class="eyebrow">CHEMISTRY IN INDUSTRY</p>
+                <h2>Explore PET Recycling</h2>
+                <p>
+                    Discover how used PET bottles are transformed into
+                    reusable materials through industrial recycling.
+                </p>
+            </div>
+
+            <p class="simulator-intro">
+                Follow the recycling journey from collected plastic bottles
+                to reusable PET materials. Explore each stage to understand
+                the science and technology behind the process.
+            </p>
+
+            <div class="process-flow">
+                <h3>PET Recycling Process Flow</h3>
+
+                <p>
+                    Follow the journey of PET bottles through
+                    the major stages of mechanical recycling.
+                </p>
+
+                <div class="process-flow-container">
+                    <div class="flow-step" data-stage="stage-1" role="button" tabindex="0" aria-controls="stage-1"
+                        aria-label="Explore Collection stage">
+                        <span>01</span>
+                        <h4>Collection</h4>
+                        <p>Used PET bottles are collected.</p>
+                    </div>
+
+                    <div class="flow-step" data-stage="stage-1" role="button" tabindex="0" aria-controls="stage-1"
+                        aria-label="Explore Sorting stage">
+                        <span>02</span>
+                        <h4>Sorting</h4>
+                        <p>PET is separated from contaminants.</p>
+                    </div>
+
+                    <div class="flow-step" data-stage="stage-2" role="button" tabindex="0" aria-controls="stage-2"
+                        aria-label="Explore Crushing stage">
+                        <span>03</span>
+                        <h4>Crushing</h4>
+                        <p>Bottles are reduced into small flakes.</p>
+                    </div>
+
+                    <div class="flow-step" data-stage="stage-2" role="button" tabindex="0" aria-controls="stage-2"
+                        aria-label="Explore Washing stage">
+                        <span>04</span>
+                        <h4>Washing</h4>
+                        <p>Flakes are cleaned to remove impurities.</p>
+                    </div>
+
+                    <div class="flow-step" data-stage="stage-2" role="button" tabindex="0" aria-controls="stage-3"
+                        aria-label="Explore Drying stage">
+                        <span>05</span>
+                        <h4>Drying</h4>
+                        <p>Excess moisture is removed.</p>
+                    </div>
+
+                    <div class="flow-step" data-stage="stage-4" role="button" tabindex="0" aria-controls="stage-4"
+                        aria-label="Explore Extrusion stage">
+                        <span>06</span>
+                        <h4>Extrusion</h4>
+                        <p>Processed PET is melted and filtered.</p>
+                    </div>
+
+                    <div class="flow-step" data-stage="stage-4" role="button" tabindex="0" aria-controls="stage-4"
+                        aria-label="Explore Pelletisation stage">
+                        <span>07</span>
+                        <h4>Pelletisation</h4>
+                        <p>The material is formed into small pellets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <details class="recycling-stage" id="stage-1">
+                <summary>
+                    Stage 1: Collection and Sorting
+                </summary>
+
+                <p>
+                    Used PET bottles are collected and sorted to separate
+                    PET from unwanted materials such as PVC, metals and
+                    other plastics. Proper sorting is important because
+                    contaminants can reduce the quality of recycled PET.
+                </p>
+
+                <div class="scientific-insight">
+                    <h4>Scientific Insight</h4>
+                    <p>
+                        PET (polyethylene terephthalate) and PVC
+                        (polyvinyl chloride) are two different types
+                        of polymers. A polymer is a large molecule
+                        made up of repeating structural units.
+                    </p>
+
+                    <p>
+                        These polymers have different chemical
+                        structures and thermal properties. PVC
+                        contamination can cause degradation during
+                        PET recycling, reducing the quality of the
+                        recovered material.
+                    </p>
+                </div>
+
+                <div class="stage-equipment">
+                    <h4>Equipment Used</h4>
+                    <ul>
+                        <li>Collection bins</li>
+                        <li>Conveyor belts</li>
+                        <li>Sorting equipment</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="recycling-stage" id="stage-2">
+                <summary>
+                    Stage 2: Crushing and Washing
+                </summary>
+
+                <p>
+                    After sorting, PET bottles are crushed into small flakes
+                    to make further processing easier. The flakes are then
+                    washed to remove dirt, residual liquids, labels, adhesives
+                    and other impurities. This cleaning process helps prepare
+                    the PET flakes for subsequent recycling operations.
+                </p>
+
+                <div class="scientific-insight">
+                    <h4>Scientific Insight</h4>
+
+                    <p>
+                        Crushing increases the exposed surface area of PET
+                        by breaking large bottles into smaller flakes.
+                        This allows washing solutions to make better contact
+                        with the material and helps remove surface contaminants.
+                    </p>
+
+                    <p>
+                        Density-based separation can also be used during
+                        washing. PET typically sinks in water, while common
+                        floating contaminants such as polyethylene (PE) and
+                        polypropylene (PP) can be separated from it.
+                    </p>
+
+                    <p>
+                        However, separation depends on the material's density
+                        and the conditions of the process. Not every contaminant
+                        floats, so additional sorting and cleaning methods may
+                        be necessary.
+                    </p>
+                </div>
+
+                <div class="stage-equipment">
+                    <h4>Equipment Used</h4>
+                    <ul>
+                        <li>Plastic bottle crusher</li>
+                        <li>Washing tank</li>
+                        <li>Friction washer</li>
+                    </ul>
+                </div>
+            </details>
+
+
+            <details class="recycling-stage" id="stage-3">
+                <summary>
+                    Stage 3: Drying and Flake Processing
+                </summary>
+
+                <p>
+                    After washing, PET flakes undergo mechanical dewatering
+                    to remove excess water. They are then dried to reduce
+                    their moisture content. Proper drying is important because
+                    moisture can cause PET to degrade during high-temperature
+                    processing. The dried flakes are prepared for further
+                    processing based on their intended application.
+                </p>
+
+
+                <div class="scientific-insight">
+                    <h4>Scientific Insight</h4>
+
+                    <p>
+                        PET (polyethylene terephthalate) is a polyester.
+                        Its polymer chains contain ester linkages, which
+                        can be broken through a chemical reaction called
+                        hydrolysis.
+                    </p>
+
+                    <p>
+                        When PET is heated in the presence of moisture,
+                        hydrolysis can break its polymer chains and reduce
+                        its molecular weight. This can negatively affect
+                        the mechanical properties of the recycled material.
+                    </p>
+
+                    <p>
+                        Proper drying helps minimise this degradation
+                        before PET undergoes high-temperature processing.
+                        Industrial PET processing may use controlled drying
+                        conditions to achieve the required moisture level.
+                    </p>
+
+                </div>
+                <div class="stage-equipment">
+                    <h4>Equipment Used</h4>
+                    <ul>
+                        <li>Mechanical dewatering machine</li>
+                        <li>Hot-air dryer</li>
+                        <li>Storage hopper</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="recycling-stage" id="stage-4">
+                <summary>
+                    Stage 4: Final Processing and Product Formation
+                </summary>
+
+                <p>
+                    Dried PET flakes are fed into an extrusion system,
+                    where they are heated until they melt. The molten
+                    material passes through a filtration system to remove
+                    remaining solid impurities. It is then pushed through
+                    a die and cooled before being cut into small recycled
+                    PET pellets. These pellets can be used as raw materials
+                    for manufacturing new products.
+                </p>
+
+
+                <div class="scientific-insight">
+                    <h4>Scientific Insight</h4>
+
+                    <p>
+                        PET is a thermoplastic polymer. This means it can
+                        soften and melt when heated and become solid again
+                        when cooled. This property makes it suitable for
+                        processes such as extrusion and pellet production.
+                    </p>
+
+                    <p>
+                        During extrusion, molten PET is forced through a
+                        specially shaped opening called a die. Before
+                        extrusion, melt filtration helps remove remaining
+                        solid contaminants that could affect the quality
+                        of the recycled material.
+                    </p>
+
+                    <p>
+                        The extruded PET is cooled and cut into small
+                        pellets. These pellets can be used as raw materials
+                        for manufacturing new products, depending on
+                        their quality and intended application.
+                    </p>
+
+                    <p>
+                        For applications requiring higher-quality PET,
+                        additional treatments such as solid-state
+                        polycondensation may be necessary to improve
+                        the polymer's molecular weight and properties.
+                    </p>
+                </div>
+
+                <div class="stage-equipment">
+                    <h4>Equipment Used</h4>
+                    <ul>
+                        <li>Extrusion machine</li>
+                        <li>Melt filtration system</li>
+                        <li>Pelletising machine</li>
+                    </ul>
+                </div>
+            </details>
+
+            <div class="recovery-calculator">
+                <h3>Material Recovery Calculator</h3>
+
+                <p>
+                    Calculate how much PET material is recovered after processing.
+                </p>
+
+                <div>
+                    <label for="input-mass">Initial PET Mass (kg)</label>
+                    <input type="number" id="input-mass" min="0" step="any">
+                </div>
+
+                <div>
+                    <label for="recovered-mass">Recovered PET Mass (kg)</label>
+                    <input type="number" id="recovered-mass" min="0" step="any">
+                </div>
+
+                <button id="recovery-button">Calculate Recovery</button>
+
+                <p id="recovery-result" aria-live="polite"></p>
+            </div>
+        </section>
+
+
+
+
+
+        <p id="message" aria-live="polite"></p>
+    </main>
+
+    <footer id="about">
+        <p>&copy; 2026 ChemKnow. Built by <span>Imran Mubarak Kayode</span> for chemistry learners.</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
