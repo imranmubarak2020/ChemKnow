@@ -4929,7 +4929,9 @@ curriculumDisplay.addEventListener("click", function (event) {
     ${lesson.sections.map(function (section) {
     return `
         <h3>${section.heading}</h3>
-        <p>${section.content}</p>
+        ${section.content.split("\n\n").map(function (paragraph) {
+      return `<p>${paragraph}</p>`;
+    }).join("")}
       `;
   }).join("")}
 
