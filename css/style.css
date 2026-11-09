@@ -2162,3 +2162,428 @@ footer {
     padding: 14px;
   }
 }
+
+
+/* =========================================
+   CHEMKNOW ABOUT SECTION
+========================================= */
+
+.about {
+    position: relative;
+    padding: 80px 8% 40px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.about-hero {
+    max-width: 1200px;
+    margin: 0 auto 100px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-hero-heading .eyebrow {
+    color: #2476b9;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-bottom: 24px;
+}
+
+.about-hero-heading h2 {
+    max-width: 650px;
+    color: #102d49;
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    font-weight: 750;
+    line-height: 1.12;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+.about-hero-description {
+    padding-left: 30px;
+    border-left: 2px solid #2476b9;
+}
+
+.about-hero-description p {
+    color: #526477;
+    font-size: 1.02rem;
+    line-height: 2;
+    margin-bottom: 32px;
+}
+
+.about-hero-description p + p {
+    padding-top: 8px;
+}
+
+.about-hero-description p:last-child {
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+    .about-hero-description p {
+        line-height: 1.75;
+        margin-bottom: 16px;
+    }
+
+    .about-hero-description p + p {
+        padding-top: 0;
+    }
+}
+
+
+
+/* WHY CHEMKNOW */
+
+.about-problem {
+    max-width: 1200px;
+    margin: 0 auto 110px;
+    padding: 55px 60px;
+    background: #102d49;
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-problem h3 {
+    color: #ffffff;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    margin-bottom: 25px;
+}
+
+.about-problem p {
+    max-width: 900px;
+    color: #d4e1ed;
+    font-size: 1rem;
+    line-height: 1.85;
+    margin-bottom: 18px;
+}
+
+.about-problem p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* PLATFORM FEATURE GRID */
+
+.about-offerings {
+    max-width: 1200px;
+    margin: 0 auto 110px;
+}
+
+.about-offerings .section-heading {
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+.about-offerings .section-heading .eyebrow {
+    color: #2476b9;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.about-offerings .section-heading h3 {
+    color: #102d49;
+    font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+}
+
+.about-offerings .section-heading > p:not(.eyebrow) {
+    max-width: 650px;
+    margin: 0;
+    color: #526477;
+    line-height: 1.8;
+}
+
+.about-offerings .about-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin: 0;
+}
+
+.about-feature {
+    position: relative;
+    min-height: 245px;
+    padding: 32px;
+    background: #f7f9fc;
+    border: 1px solid #e3eaf1;
+    border-radius: 12px;
+    transition: border-color 0.25s ease,
+                background-color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.about-feature:hover {
+    background: #ffffff;
+    border-color: #8bb9dc;
+    transform: translateY(-3px);
+}
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 28px;
+    color: #2476b9;
+    background: #e7f1fa;
+    border-radius: 10px;
+}
+
+.feature-icon svg {
+    width: 23px;
+    height: 23px;
+}
+
+.feature-number {
+    position: absolute;
+    top: 35px;
+    right: 32px;
+    color: #9aabba;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about-feature h4 {
+    color: #102d49;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.about-feature p {
+    max-width: 450px;
+    color: #526477;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+
+/* MISSION AND VISION */
+
+.about-purpose {
+    max-width: 1200px;
+    margin: 0 auto 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.purpose-card {
+    padding: 42px;
+    border-radius: 14px;
+    min-height: 280px;
+}
+
+.mission-card {
+    background: #edf4fa;
+    border: 1px solid #d8e6f1;
+}
+
+.vision-card {
+    background: #102d49;
+    border: 1px solid #102d49;
+}
+
+.purpose-card h3 {
+    font-size: 1.65rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 22px;
+}
+
+.mission-card h3 {
+    color: #102d49;
+}
+
+.vision-card h3 {
+    color: #ffffff;
+}
+
+.purpose-card p {
+    font-size: 0.98rem;
+    line-height: 1.9;
+    margin: 0;
+}
+
+.mission-card p {
+    color: #526477;
+}
+
+.vision-card p {
+    color: #d4e1ed;
+}
+
+
+/* LEARNING PHILOSOPHY */
+
+.about-philosophy {
+    max-width: 1200px;
+    margin: 0 auto 110px;
+    padding: 55px 60px;
+    background: #f3f7fb;
+    border-left: 4px solid #2476b9;
+    border-radius: 0 14px 14px 0;
+}
+
+.about-philosophy h3 {
+    color: #102d49;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 22px;
+}
+
+.about-philosophy p {
+    max-width: 950px;
+    color: #526477;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.about-philosophy p:last-child {
+    margin-bottom: 0;
+}
+
+/* LOOKING AHEAD */
+
+.about-future {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 55px 60px;
+    background: #eaf2f9;
+    border: 1px solid #d7e5f1;
+    border-radius: 14px;
+}
+
+.about-future h3 {
+    color: #102d49;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 22px;
+}
+
+.about-future p {
+    max-width: 950px;
+    color: #526477;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.about-future p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   ABOUT SECTION RESPONSIVENESS
+========================================= */
+
+@media (max-width: 768px) {
+
+    .about {
+        padding: 60px 5% 30px;
+    }
+
+    .about-hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 65px;
+    }
+
+    .about-hero-heading h2 {
+        font-size: clamp(2.2rem, 8vw, 3rem);
+        letter-spacing: -1px;
+    }
+
+    .about-hero-description {
+        padding-left: 20px;
+    }
+
+    .about-problem {
+        padding: 35px 28px;
+        margin-bottom: 70px;
+    }
+
+    .about-offerings {
+        margin-bottom: 70px;
+    }
+
+    .about-offerings .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-feature {
+        min-height: auto;
+        padding: 28px;
+    }
+
+    .about-purpose {
+        grid-template-columns: 1fr;
+        margin-bottom: 70px;
+    }
+
+    .purpose-card {
+        min-height: auto;
+        padding: 32px;
+    }
+
+    .about-philosophy,
+    .about-future {
+        padding: 35px 28px;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .about {
+        padding: 50px 5% 25px;
+    }
+
+    .about-problem,
+    .about-philosophy,
+    .about-future {
+        padding: 28px 22px;
+    }
+
+    .about-feature,
+    .purpose-card {
+        padding: 26px 22px;
+    }
+
+    .about-feature h4 {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* REDUCE SPACE BEFORE EXPLORE CHEMKNOW */
+
+.about-future {
+    margin-bottom: 0;
+}
+
+.about {
+    padding-bottom: 0;
+}
+
+.about + section {
+    padding-top: 30px;
+}
